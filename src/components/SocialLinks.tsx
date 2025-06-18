@@ -1,26 +1,21 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const socialLinks = [
   {
     icon: <FaGithub />,
     label: 'GitHub',
-    url: 'https://github.com/yourusername',
+    url: 'https://github.com/Libi-Libman',
   },
   {
     icon: <FaLinkedin />,
     label: 'LinkedIn',
-    url: 'https://linkedin.com/in/yourusername',
-  },
-  {
-    icon: <FaTwitter />,
-    label: 'Twitter',
-    url: 'https://twitter.com/yourusername',
+    url: 'https://www.linkedin.com/in/libi-libman/',
   },
   {
     icon: <FaEnvelope />,
     label: 'Email',
-    url: 'mailto:your@email.com',
+    url: 'mailto:libi.libman@gmail.com',
   },
 ];
 
