@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const socialLinks = [
@@ -19,21 +18,23 @@ const socialLinks = [
   },
 ];
 
-const SocialLinks: React.FC = () => (
-  <div className="flex justify-center space-x-6 mt-4">
-    {socialLinks.map((link) => (
-      <a
-        key={link.label}
-        href={link.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-600 hover:text-blue-800 text-2xl transition-colors"
-        aria-label={link.label}
-      >
-        {link.icon}
-      </a>
-    ))}
-  </div>
-);
+function SocialLinks() {
+  return (
+    <div className="flex justify-center space-x-6 mt-4">
+      {socialLinks.map((link) => (
+        <a
+          key={link.label}
+          href={link.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:text-blue-800 text-2xl transition-colors"
+          aria-label={link.label}
+        >
+          {link.icon}
+        </a>
+      ))}
+    </div>
+  );
+}
 
 export default SocialLinks;
